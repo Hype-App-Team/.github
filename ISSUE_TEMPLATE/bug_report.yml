@@ -1,0 +1,34 @@
+name: Баг / регрессия
+description: Сообщить о воспроизводимой ошибке в приложении, API, боте или ML-разборе
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: contour
+    attributes:
+      label: Где проявляется
+      options:
+        - Mini App / Web (hype-frontend)
+        - Core API (hype-backend / api)
+        - Telegram-бот (hype-backend / bot)
+        - Извлечение мест и геоматчинг (hype-ml)
+        - Инфраструктура / деплой
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: "1. Отправить ссылку ...\n2. Открыть экран ...\n3. Увидеть ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое vs фактическое поведение
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия релиза / SHA коммита / окружение
+      placeholder: "v0.1.0 / prod-ru"

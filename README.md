@@ -8,7 +8,7 @@
 | --- | --- | --- | --- |
 | **`hype-frontend`** | Клиентский веб и Telegram Mini App | 🔒 Private | React 19 + TypeScript + FSD (`apps/web`, `packages/core`). Публикует `hype-frontend-<tag>.tar.gz` и контейнер `ghcr.io/hype-app-team/hype-frontend`. |
 | **`hype-backend`** | Продуктовый API и Telegram-бот | 🔒 Private | FastAPI (`services/api`) + `@where_is_hype_bot` (`services/bot`) + контракт `contracts/openapi.v1.json`. Публикует `ghcr.io/hype-app-team/hype-api` и `hype-bot`. |
-| **`hype-ml`** | Мультимодальное ML-ядро и лаборатория | 🔒 Private | Пакет `gde-hype-ml` (`packages/runtime`), HTTP-воркер извлечения (`services/extractor`) и стенд оценки (`lab/extract-lab`). Публикует wheel `gde_hype_ml-*.whl` и `ghcr.io/hype-app-team/hype-ml-extractor`. |
+| **`hype-ml`** | Мультимодальное ML-ядро и лаборатория | 🔒 Private | Пакет `gde-hype-ml` (`runtime/`), HTTP-воркер извлечения (`services/extractor/`) и стенд оценки (`extract-lab/`). Публикует wheel `gde_hype_ml-*.whl` и `ghcr.io/hype-app-team/hype-ml-extractor`. |
 | **`.github`** | Стандарты организации | 🌐 Public | Профиль команды, политика безопасности (`SECURITY.md`), правила совместной работы (`CONTRIBUTING.md`) и шаблоны PR/Issue. |
 
 ## Принципы независимой сборки и надёжности (SRE)

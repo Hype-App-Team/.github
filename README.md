@@ -1,2 +1,3 @@
-# .github
-Профиль команды «Где Хайп?» и общие материалы GitHub.
+# Где Хайп? · Hype App Team
+
+Публичный профиль команды — в [profile/README.md](profile/README.md).
